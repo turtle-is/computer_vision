@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Feed</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        img {
+            width: auto;
+            height: 100vh;
+            transform: scaleX(-1); /* Mirror the image horizontally */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+</body>
+</html>
